@@ -1,0 +1,25 @@
+{
+  "name": "visionday-digital",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plataforma de Contabilidade Digital com IA — moderna, modular e multi-tenant.",
+  "author": "Ygor Paz",
+  "license": "MIT",
+  "workspaces": [
+    "backend",
+    "frontend",
+    "shared"
+  ],
+  "scripts": {
+    "dev:backend": "npm run start:dev --workspace backend",
+    "dev:frontend": "npm run dev --workspace frontend",
+    "build:backend": "npm run build --workspace backend",
+    "build:frontend": "npm run build --workspace frontend",
+    "start:backend": "npm run start --workspace backend",
+    "start:frontend": "npm run start --workspace frontend",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}
